@@ -1,5 +1,5 @@
 # infer_webcam.py
-import cv2, numpy as np, tensorflow as tf, time, os
+import cv2, numpy as np, tensorflow as tf, time, os # pyright: ignore[reportMissingImports]
 from tensorflow.keras.models import load_model # type: ignore
 
 # model = load_model("ml/models/facial_emotion_model.keras")
@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model # type: ignore
 # model = load_model("ml/models/emotion_recognition_model.keras")
 
 #happy 81 wala 
-model = load_model("ml/models/emotion_classification_model.keras")
+model = load_model("ml/models/emotion_detection_model_final.keras")
 # model = load_model("ml/models/emotion_recognition_model_new.keras")
 # model = load_model("ml/models/new_emotion_trained_model.keras")
 
